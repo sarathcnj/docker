@@ -20,7 +20,7 @@ type Events struct {
 	pub    *pubsub.Publisher
 }
 
-// New returns new *Events instance
+// New returns new *Events instance - changes
 func New() *Events {
 	return &Events{
 		events: make([]eventtypes.Message, 0, eventsLimit),
